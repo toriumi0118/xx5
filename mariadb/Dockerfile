@@ -1,5 +1,5 @@
 FROM mariadb
-MAINTAINER bobox <bobox@gmail.com>
+MAINTAINER toriumi0118 <toriumi0118@gmail.com>
 ENV MYSQL_ROOT_PASSWORD xxholic
 ENV MYSQL_DATABASE xx5
 ENV MYSQL_USER xyz12345

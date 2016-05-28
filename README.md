@@ -11,14 +11,18 @@
   ```bash
   ### 実行コマンド
   cd mariadb
-  docker build
-  docker run --name marianode -v mysql_data:/var/lib/mysql -d xx5/marianode
+  docker build .
+  docker run --name marianode -v maria_data:/var/lib/mysql -d xx5/marianode
   ```
 
-  > --name は containerにつける名称  
+  > **optionについて**
   >
-  > 接続しているvolumeを確認するには
-  > docker volume inspect mysql_data
+  > --name : containerにつける名称  
+  > -v : volumeをmountできる。    
+  > host側のmaria_data(/var/lib/docker/volumes/にいる)をcontainer側の/var/lib/mysqlにマウントする
+  >
+  > 接続しているvolumeを確認するには  
+  > docker volume inspect maria_data
 
   **marianodeへアクセス**
 
